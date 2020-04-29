@@ -1,0 +1,48 @@
+package assignment1;
+
+
+import java.util.Scanner;
+public class Assignment1 {
+
+  
+    public static void main(String[] args) {
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.println("Enter a sentence using the word \'Java\' in it:");
+
+        //Printing the sentence
+        String sentence;
+        sentence = keyboard.nextLine();
+        System.out.println("\nThe string read is: " + sentence);
+        
+        //Getting and printing length
+        int n = sentence.length();
+        
+        System.out.println("Length in chars is: " + n);
+        
+        //Printing in lowercase
+        
+        String sentenceLower;
+        sentenceLower = sentence.toLowerCase();
+        System.out.println("All lowercase is: " + sentenceLower );
+        
+        //Printing in uppercase
+        
+        String sentenceUpper;
+        sentenceUpper = sentence.toUpperCase();
+        System.out.println("All uppercase is: " + sentenceUpper );
+       
+
+    
+        // Getting and printing the position of Java
+        
+        int position = sentence.indexOf("Java");
+        
+        System.out.println("Found \'Java\' at pos: " + position);
+        
+        
+        System.out.println("Done - press enter to end program");
+    }
+    
+}
